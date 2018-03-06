@@ -15,7 +15,7 @@
 		<nav class="nav-lowex">
 			<div class="left margin-logoxz" style="margin-left: 2em">
                   <a href="#" data-activates="mobile-demo" class="button-collapse show-on-small"><i aria-hidden="true" class="fa fa-bars icon-nav"></i></a>
-				<img class="logo-size" src="css/img/logo.png">
+				<img class="logo-size wow bounceInDown" src="css/img/logo.png">
 			</div>
 			<ul class="right icon-post hide-on-med-and-down">
                   <li ><a href="home.html">Home</a></li>
@@ -145,7 +145,7 @@ of amazing user experiences start.</p>
        <div class="backpink">
            <div class="container">
            <div class="row">
-                    <div class="col s12 m12 l12 animated bounceInLeft">
+                    <div class="col s12 m12 l12 animated wow bounceInLeft">
     <h3 class="center"> Want To Work Together ?</h3>
     <p class="center">I'm currently accepting new projects and would love to hear about yours.
         Please take a few minutes to tell me about it.</p>
@@ -183,19 +183,24 @@ of amazing user experiences start.</p>
         </div>
        
 
-
+<script src="js/wow.min.js"></script>
+        <script>
+    wow = new WOW(
+      {
+        animateClass: 'animated',
+        offset:       100,
+        callback:     function(box) {
+          console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+        }
+      }
+    );
+    wow.init();
+    document.getElementById('moar').onclick = function() {
+      var section = document.createElement('section');
+      section.className = 'section--purple wow fadeInDown';
+      this.parentNode.insertBefore(section, this);
+    };
+  </script>
 
     </body>
-    <script>
-
-
-  $(window).scroll(function() {
-    if($(this).scrollTop() > 50)  /*height in pixels when the navbar becomes non opaque*/ 
-    {
-        $('.opaque-navbar').addClass('opaque');
-    } else {
-        $('.opaque-navbar').removeClass('opaque');
-    }
-});
-        </script>
 </html>
