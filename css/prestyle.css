@@ -1,17 +1,46 @@
 body {
-    font-family: Lato;
-        background-color: #ffff8d;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #b9ae2c;
+}
+.header-presen-1 {
+    background-color: #ebebeb;
+    height: 900px;
 }
 .upper-yard {
     margin-top: 42px;
+    padding-bottom: 100px;
 }
 .title-h1 {
     margin:  0 auto;
     width: 700px;
+    color: #ffffff;
 }
 .title-4 {
     font-weight: 700;
     font-size: 18px;
     margin-top: 26px;
-    color: #8d8d8d;
+    color: #000000;
+}
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+	background: $background
+}
+.upp-part {
+    margin-top: 2px;
+}
+.title-content-1 {
+    font-size: 20px;
+    font-weight: 800;
+    color: #393939;
+}
+.low-title {
+    color: #767676;
+    font-weight: 500;
 }

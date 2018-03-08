@@ -6,12 +6,14 @@
         <link rel="stylesheet" href="css/prestyle.css">
         <link rel="stylesheet" href="css/animate.css">
         <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	<link href="css/materialize.css" media="screen,projection" rel="stylesheet" type="text/css">
 	<link href="css/style.css" media="screen,projection" rel="stylesheet" type="text/css">
     </head>
     <body>
+        <div id="particles-js"></div>
         <div class="header-presen">
+          
             <div class="container">
             <div class="row">
                 <div class="col s12 m12 l12">
@@ -26,12 +28,45 @@ design SMK BPI</h1>
                 </div>
             </div>
             </div>
-        </div>
+            </div>
+      
+     
+        <!-- count particles -->
         <div class="header-presen-1">
             <div class="container">
             <div class="row">
+                <div class="col s12 m12 l12">
+                    <br>
+                   <p class="title-content-1">WEB SMK BPI <span class="low-title">JANUARI 2016</span></p>
+                   <h2>Desain Awal SMK BPI</h2>
+                </div>
                 </div>
             </div>
         </div>
+        
+<!-- scripts -->
+<script src="js/particles.js"></script>
+<script src="js/app.js"></script>
+
+<!-- stats.js -->
+<script>
+  var count_particles, stats, update;
+  stats = new Stats;
+  stats.setMode(0);
+  stats.domElement.style.position = 'absolute';
+  stats.domElement.style.left = '0px';
+  stats.domElement.style.top = '0px';
+  document.body.appendChild(stats.domElement);
+  count_particles = document.querySelector('.js-count-particles');
+  update = function() {
+    stats.begin();
+    stats.end();
+    if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+      count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+    }
+    requestAnimationFrame(update);
+  };
+  requestAnimationFrame(update);
+</script>
     </body>
 </html>
