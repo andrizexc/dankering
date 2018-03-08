@@ -1,0 +1,17 @@
+body {
+    font-family: Lato;
+        background-color: #ffff8d;
+}
+.upper-yard {
+    margin-top: 42px;
+}
+.title-h1 {
+    margin:  0 auto;
+    width: 700px;
+}
+.title-4 {
+    font-weight: 700;
+    font-size: 18px;
+    margin-top: 26px;
+    color: #8d8d8d;
+}
