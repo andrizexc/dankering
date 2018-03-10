@@ -39,6 +39,17 @@ design SMK BPI</h1>
                     <br>
                    <p class="title-content-1">WEB SMK BPI <span class="low-title">JANUARI 2016</span></p>
                    <h2>Desain Awal SMK BPI</h2>
+                    <div class="col s12 m12 l12">
+                      <div class="carousel carousel-slider">
+    <a class="carousel-item" href="#one!"><img src="img/oldweb/Screenshot_48.png"></a>
+    <a class="carousel-item" href="#one!"><img src="img/oldweb/Screenshot_49.png"></a>
+                           <a class="carousel-item" href="#one!"><img src="img/oldweb/Screenshot_50.png"></a>
+                           <a class="carousel-item" href="#one!"><img src="img/oldweb/Screenshot_51.png"></a>
+                           <a class="carousel-item" href="#one!"><img src="img/oldweb/Screenshot_52.png"></a>
+  </div>
+        
+        
+                    </div>
                 </div>
                 </div>
             </div>
@@ -47,6 +58,12 @@ design SMK BPI</h1>
 <!-- scripts -->
 <script src="js/particles.js"></script>
 <script src="js/app.js"></script>
+      	<script src="https://code.jquery.com/jquery-2.1.1.min.js">
+	</script> 
+	<script src="js/materialize.js">
+	</script> 
+	<script src="js/init.js">
+	</script> 
 
 <!-- stats.js -->
 <script>
@@ -68,5 +85,58 @@ design SMK BPI</h1>
   };
   requestAnimationFrame(update);
 </script>
+        <script>
+              $(document).ready(function(){                 
+	                  $('input.autocomplete').autocomplete({
+	                  data: {
+	                      "Apple": null,
+	                      "Microsoft": null,
+	                      "Google": null,
+	                      "Gargle":null
+	                  }
+	                  });                
+	                  });
+	              
+	               $( document ).ready(function(){
+	               $(".button-collapse").sideNav();
+	                    $('.carousel.carousel-slider').carousel({fullWidth: true});
+	                     $('.carousel-slider').carousel({fullWidth: true, padding:0},setTimeout(autoplay, 4500));
+	 function autoplay() {
+	   $('.carousel').carousel('next');
+	   setTimeout(autoplay, 7500);
+	    }
+	          });
+	     $('.carousel.carousel-slider').carousel({fullWidth: true});
+	       
+	       
+	$(document).ready(function() {
+	   $(document).scroll(function () {
+	       var scroll = $(this).scrollTop();
+	       var topDist = $("#container").position();
+	       if (scroll > topDist.top) {
+	           $('.nav-lower').css({"position":"fixed","top":"0","transition": "top 0.5s"});
+	           $('.logo-size').css({" width ":"300px","margin-left":" "});
+	       } else {
+	           $('.nav-lower').css({"position":"static","top":"auto"});
+	       }
+	   });
+	});
+	               // AFFIX LOWER NAVBAR ON SCROLL
+	$(window).scroll(function() {    
+	   var scroll = $(window).scrollTop();
+	   if (scroll >= 14) {
+	       $("nav").addClass("navbar-fixed");
+	         $("nav").addClass("navbar-fixed");
+	          document.getElementById("nav").style.marginTop= "-200px";
+	   }
+	   else {
+	       $("nav").removeClass("navbar-fixed");     
+	   }
+	});
+        
+          $(document).ready(function(){
+      $('.carousel').carousel();
+    });
+            </script>
     </body>
 </html>
