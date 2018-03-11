@@ -1,10 +1,9 @@
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #b9ae2c;
+    background-color: rgb(201, 165, 0);
 }
 .header-presen-1 {
     background-color: #ebebeb;
-    height: 900px;
 }
 .upper-yard {
     margin-top: 42px;
@@ -19,7 +18,7 @@ body {
     font-weight: 700;
     font-size: 18px;
     margin-top: 26px;
-    color: #000000;
+    color: #434343;
 }
 canvas {
   display: block;
@@ -40,38 +39,138 @@ canvas {
     font-weight: 800;
     color: #393939;
 }
+.title-content-2 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #393939;
+}
+.text-content-1 {
+    font-size: 20px;
+    color: #939393;
+
+}
+.text-content-2 {
+    font-size: 28px;
+    color: #939393;
+
+}
+.media-title-1 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #414141;
+}
+
+.media-social  {
+    list-style-type: none;
+    margin-left: -10px;
+    padding-bottom: 20px;
+}
+.contentsocial{
+     letter-spacing: 2px;
+}
+
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    padding: 0px 12px 0px 12px;
+    color: #9d9d9d;
+    text-align: center;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    color: #000000;
+}
+
+.active {
+    background-color: #4CAF50;
+}
 .low-title {
     color: #767676;
     font-weight: 500;
 }
-.owl-carousel .owl-nav .owl-prev,
-  .owl-carousel .owl-nav .owl-next,
-  .owl-carousel .owl-dot {
-    font-family: 'Material Icons';
-    font-size: 4rem;
+.slick-prev:before,
+.slick-next:before {
+  color: black;
 }
-.owl-nav {height:0;margin:0;}
-.owl-carousel .owl-nav .owl-prev:before{
 
-    content: "\E5CB";
-    margin-left:16px;
-    position: absolute;
-	  top: 40%;
-    left: 0px;
-    height: auto;
-    text-shadow: 0px 0px 5px rgba(0,0,0,0.1),
-                 0px 0px 8px rgba(0,0,0,0.05),
-                 0px 0px 12px rgba(0,0,0,0.05);
+.slick-dotted .slick-current img {
+  transform: scale(1.1);
 }
-.owl-carousel .owl-nav .owl-next:after{
 
-    content: "\E5CC";
-    margin-right: 16px;
-    position: absolute;
-	  top: 40%;
-    right: 0px;
-    height: 100%;
-    text-shadow: 0px 0px 5px rgba(0,0,0,0.1),
-                 0px 0px 8px rgba(0,0,0,0.05),
-                 0px 0px 12px rgba(0,0,0,0.05);
+.sliderx {
+    max-height: 400px;
+ 
+}
+.color-copied {
+    background-color: #FFE600;
+    width: 90px;
+    height: 90px;
+    margin: 0 auto;
+    
+}
+.color-copied-1 {
+    background-color:#F7F760;
+    width: 90px;
+    height: 90px;
+    margin: 0 auto;
+    
+}
+.color-copied-2 {
+    background-color: #002F4B;
+    width: 90px;
+    height: 90px;
+    margin: 0 auto;
+    
+}
+.color-copied-3 {
+    background-color: #7cff37;
+    width: 90px;
+    height: 90px;
+    margin: 0 auto;
+    
+}
+.icon-color {
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    padding: 22px;
+    opacity: 0;
+    transition: 0.5s;
+}
+.hovertext:hover .icon-color{
+  opacity: 1;
+}
+.hovertext:hover  .copy-color {
+  opacity: 1;
+}
+.hovertext:hover .code-color {
+    opacity: 0;
+}
+.code-color {
+    letter-spacing: 2px;
+    font-size: 19px;
+    color: #454545;
+    font-weight: 600;
+    transition: 0.5s;
+}
+.copy-color {
+    font-weight: 600;
+    color: #292929;
+    font-size: 19px;
+    margin-top: -30px;
+    opacity: 0;
+    transition: 0.9s;
+}
+
+.card-panel-x {
+    -webkit-box-shadow: 0px 14px 9px -7px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 14px 9px -7px rgba(0,0,0,0.75);
+box-shadow: 0px 14px 9px -7px rgba(0,0,0,0.75);
+}
+.card-xx {
+    padding-bottom: 60px;
 }
