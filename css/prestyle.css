@@ -2,8 +2,15 @@ body {
     font-family: 'Montserrat', sans-serif;
     background-color: rgb(201, 165, 0);
 }
+#green{
+   height: 500px;
+   background: green
+}
+#red{
+   height: 500px;
+}
 .header-presen-1 {
-    background-color: #ebebeb;
+    background-color: #ffffff;
 }
 .upper-yard {
     margin-top: 42px;
@@ -11,7 +18,6 @@ body {
 }
 .title-h1 {
     margin:  0 auto;
-    width: 700px;
     color: #ffffff;
 }
 .title-4 {
@@ -174,6 +180,9 @@ box-shadow: 0px 14px 9px -7px rgba(0,0,0,0.75);
 .card-xx {
     padding-bottom: 60px;
 }
+.media-social {
+    list-style-type: none;
+}
 .g-li {
     float: none;
     font-size: 18px;
@@ -182,4 +191,19 @@ box-shadow: 0px 14px 9px -7px rgba(0,0,0,0.75);
 }
 .list-goals {
     list-style-type: lower-greek;
+}
+.center-x {
+    padding-left: 100px;
+    padding-right: 1000px;
+}
+.head-title-design {
+    font-weight: 600;
+    margin-top: 40px;
+     margin-bottom: 40px;
+    font-size: 40px;
+}
+.usr-rv{
+    padding-left: 20px;
+    color: #b2b2b2;
+    font-size: 30px;
 }
