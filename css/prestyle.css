@@ -2,12 +2,19 @@ body {
     font-family: 'Montserrat', sans-serif;
     background-color: rgb(201, 165, 0);
 }
-#green{
-   height: 500px;
-   background: green
+#blue{
+    height: 4600px;
+    width: 100%;
+     background-image: url(../img/webold/page.png);
+   background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
-#red{
-   height: 500px;
+.nav-ex{
+    background-image: url(../img/webold/nav.png);
+    height: 110px;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 .header-presen-1 {
     background-color: #ffffff;
@@ -207,3 +214,17 @@ box-shadow: 0px 14px 9px -7px rgba(0,0,0,0.75);
     color: #b2b2b2;
     font-size: 30px;
 }
+.pin-top {
+    position: relative;
+  }
+
+
+  .pin-bottom {
+    position: relative;
+  }
+
+
+  .pinned {
+    position: fixed !important;
+    width: 1191px;
+  }
