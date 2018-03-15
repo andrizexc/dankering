@@ -10,8 +10,23 @@ body {
     background-position: center;
     background-repeat: no-repeat;
 }
+#white {
+     height: 5900px;
+    width: 100%;
+    background-image: url(../img/neweb/new.png);
+   background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 .nav-ex{
     background-image: url(../img/webold/nav.png);
+    min-height:  110px;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.nav-ex-2{
+    background-image: url(../img/neweb/nav.png);
     min-height:  110px;
     width: 100%;
     background-size: contain;
@@ -232,8 +247,53 @@ ps-n {
     position: fixed;
     max-width: 88.4%;
     height: 90px;
-    background-image: url(../img/webold/nav-lowwer.png);
+   
   }
+.jarak {
+    margin-top: 42px;
+}
+.line {
+    width: 800px;
+    margin: 0 auto;
+    height: 3px;
+    background-color: #9d9d9d;
+    position: relative;
+    
+}
+.buled {
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    position: absolute;
+    background-color: #191919;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border-radius: 100%;
+    top:-4px;
+}
+.buled1 {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    background-color: #191919;
+    right: 0;
+    margin: 0 auto;
+    border-radius: 100%;
+    top:-4px;
+}
+.buled2 {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    background-color: #191919;
+    left: 0;
+    margin: 0 auto;
+    border-radius: 100%;
+    top:-4px;
+}
 @media only screen and (min-width: 1024px) {
    .pinned {
     position: fixed;
